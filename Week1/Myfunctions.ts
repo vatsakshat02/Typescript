@@ -21,4 +21,17 @@ loginUser('a','a@a.com') //it will not raise an issue as we have already provide
 function subtractTwo(num:number):number{ //the second number is the type of data that we expect from return
     return 'akshat' //so this will give us an error
 }
+
+//how to assign type to return in the arrow functions
+const getHello = (s:string):string =>{
+    return ""
+}
+
+//map function
+const heros = ['thor','ironman','superman'];
+
+heros.map((hero):string => {
+    return `my heros is ${hero}`}
+)
+
 export{}
