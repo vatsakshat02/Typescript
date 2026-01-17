@@ -34,4 +34,13 @@ heros.map((hero):string => {
     return `my heros is ${hero}`}
 )
 
+//errors 
+function consoleError(errmsg:string):void{ //as these functions doesn't return any value 
+    console.log(errmsg)
+}
+
+function handleErrors(errmsg:string):never{
+    throw new Error(errmsg);
+}
+
 export{}
