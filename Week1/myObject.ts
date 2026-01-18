@@ -19,13 +19,13 @@ function loggedUser():{}{ //{}menas we are expection our return type to be an ob
     return {}
 }
 //type variable
-
+//basically here we have created our own datatype and this helps us to use this more than once 
 type User = {
     name:string;
     email:string;
     isActive:boolean
 }
-
+//here we are mentioning the parameter user should be of the type User
 function CreateUser(user: User): User{
         return {name:'akshat',email:'abc@gmail.com',isActive:true}
 }

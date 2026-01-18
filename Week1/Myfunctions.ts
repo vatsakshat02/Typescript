@@ -1,5 +1,5 @@
 //functions 
-function addtTwo(num:number){ //we have to mention that it is a number otherwise it will assign any data type to it
+function addTwo(num:number){ //we have to mention that it is a number otherwise it will assign any data type to it
     return num + 2
 }
 
@@ -39,7 +39,7 @@ function consoleError(errmsg:string):void{ //as these functions doesn't return a
     console.log(errmsg)
 }
 
-function handleErrors(errmsg:string):never{
+function handleErrors(errmsg:string):never{ //some functions never return anything so for them we use never type
     throw new Error(errmsg);
 }
 
