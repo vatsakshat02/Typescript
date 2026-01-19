@@ -11,15 +11,15 @@ class User{
 const akshat =  new User("abc@gmail.com", 'akshat')
 //you dont want to access the city variable so for that write private in front of it
 
-class sser{
+//you can also write constructor like that
+class taser{
     email:string
     private readonly city: string = 'Jaipur'
     constructor(
         public emails:string,
         public name:string
-    ){
-        
-    }
-
+    ){}
 }
+
+
 export{}
