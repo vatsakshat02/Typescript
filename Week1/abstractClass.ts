@@ -10,3 +10,18 @@ abstract class Takephoto{
         return 8
     }
 }
+//this is the use of it works like an interface but we can also use 
+
+class Instagram extends Takephoto{
+    constructor(
+        public cameraMode: string,
+        public filter: string,
+        public burst: number
+
+    ){
+        super(cameraMode,filter)
+    }
+    sepia():void{
+        console.log('sepia')
+    }
+}
