@@ -15,3 +15,25 @@ function provideID(val:string | null){
     }
     val.toLowerCase();
 }
+
+//type predicates
+type Fish = {swim: () => void};
+type Bird = {fly: () => void};
+
+function isFish(pet: Fish | Bird): pet is Fish{
+    return (pet as Fish).swim !== undefined  //if it isnt equal to undefined then it will return a true value otherwise it will return a false value
+}
+
+function getFood(pet: Fish | Bird){
+    if(isFish(pet)){
+        pet
+        return "fish food"
+    }
+    else{
+        pet
+        return "bird food"
+    }
+}
+
+//basically what happening is that over here first we check that if a pet is fish or bed using isFish function
+//then we are selecting our food according to that function value if its true or false
