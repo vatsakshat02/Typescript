@@ -58,4 +58,17 @@ let s:Zeeku = {
     isActive:false,
     credcardDetails: 123456789
 }
+
+//as you can see both are correct wether we pass creditcarddetails a value or not its fine in each case
+
+//how to combine two types:
+type cardnumber = {
+    cardnumber:string
+}
+type cardDate = {
+    cardDate:string
+}
+type cardDetails =  cardnumber & cardDate & { //we use & to merge two types
+    cvv:number
+}
 export{}
