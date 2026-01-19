@@ -32,3 +32,15 @@ function identityfour<T>(val:T):T{
 
 //you can create your own type and send that as a parameter like create your own inetrface and instead of 
 //<T> write the name if the interface
+
+
+function getSearchProducts<T>(product:T[]):T{ //here the T for teh return type means the value of a member from the array
+            const myIndex = 3
+            return product[myIndex]
+}
+
+//___ARROW_FUNCTIONS___
+const getMoreSearchProduct = <T>(product:T[]):T => {
+        const myindex = 3
+        return product[myindex]
+}
