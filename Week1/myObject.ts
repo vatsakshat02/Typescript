@@ -31,4 +31,31 @@ function CreateUser(user: User): User{
 }
 
 CreateUser({name:"",email:"",isActive:true})
+
+//so now we are gonna learn two new keywords readonly and optional so lets start with readonly.
+//read only is the type of keyword used when you want someone not to modify the value or manipulate a variable
+//optional is used when you want a parameter to be optional this means that if you pass an argument or not it doesnt matter
+
+type Zeeku = {
+        readonly _id: string,
+        name:string,
+        email:string,
+        isActive:boolean,
+        credcardDetails?:number //? shows optional 
+
+}
+
+let Z:Zeeku = {
+    _id:'1234',
+    name:'akshat',
+    email:'abc@gmail.com',
+    isActive:false
+}
+let s:Zeeku = {
+    _id:'1234',
+    name:'akshat',
+    email:'abc@gmail.com',
+    isActive:false,
+    credcardDetails: 123456789
+}
 export{}
