@@ -22,3 +22,16 @@ function CreateUser(user) {
     return { name: 'akshat', email: 'abc@gmail.com', isActive: true };
 }
 CreateUser({ name: "", email: "", isActive: true });
+var Z = {
+    _id: '1234',
+    name: 'akshat',
+    email: 'abc@gmail.com',
+    isActive: false
+};
+var s = {
+    _id: '1234',
+    name: 'akshat',
+    email: 'abc@gmail.com',
+    isActive: false,
+    credcardDetails: 123456789
+};
